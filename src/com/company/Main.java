@@ -6,8 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String aString,bString,cString;
-        int a,b, result;
+        String aString, bString, cString;
+        int a, b, result;
         char c;
 
         Operation add = new Add();
@@ -16,12 +16,11 @@ public class Main {
         Operation div = new Division();
 
 
-
         System.out.println("Welcome! I can:");
-        System.out.println(2 +" + " + 2 + " = " +add.execute(2,2));
-        System.out.println(9 +" - " + 4 + " = " +sub.execute(9,4));
-        System.out.println(36 +" / " + 6 + " = " +div.execute(36,6));
-        System.out.println(6 +" + " + 4 + " = " +mult.execute(6,4));
+        System.out.println(2 + " + " + 2 + " = " + add.execute(2, 2));
+        System.out.println(9 + " - " + 4 + " = " + sub.execute(9, 4));
+        System.out.println(36 + " / " + 6 + " = " + div.execute(36, 6));
+        System.out.println(6 + " + " + 4 + " = " + mult.execute(6, 4));
         System.out.println("write \"end\" to exit :)");
 
         while (true) {
@@ -38,19 +37,19 @@ public class Main {
 
             switch (c) {
                 case '+': {
-                    result = add.execute(a,b);
+                    result = add.execute(a, b);
                     break;
                 }
                 case '-': {
-                    result = sub.execute(a,b);
+                    result = sub.execute(a, b);
                     break;
                 }
                 case '/': {
-                    result = div.execute(a,b);
+                    result = div.execute(a, b);
                     break;
                 }
                 case '*': {
-                    result = mult.execute(a,b);
+                    result = mult.execute(a, b);
                     break;
                 }
                 default: {
@@ -60,7 +59,7 @@ public class Main {
             }
 
 
-            System.out.println("" + a +" "+ c +" "+ b + " = " + result);
+            System.out.println("" + a + " " + c + " " + b + " = " + result);
         }
         System.out.println("Good bye!");
 
